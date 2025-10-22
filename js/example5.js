@@ -10,12 +10,11 @@ const person = {
   };
   
   // Uppgift 1: Anropa greet-metoden.
+  person.greet();
   // Uppgift 2: Ändra namnet och anropa greet-metoden igen.
+  person.name = "Sandra";
+  person.greet();
 
- person.greet();
-
- person.name = "Sandra";
- console.log(person.greet());
 
 
 

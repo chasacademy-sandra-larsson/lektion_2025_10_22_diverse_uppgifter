@@ -10,6 +10,3 @@ const movie = {
   // Uppgift 2: Använd Object.values() för att skriva ut alla egenskapsvärden.
   // Uppgift 3: Använd Object.entries() för att skriva ut både nycklar och värden som en array av arrays.
 
-console.log(Object.keys(movie));
-console.log(Object.values(movie))
-console.log(Object.entries(movie))
