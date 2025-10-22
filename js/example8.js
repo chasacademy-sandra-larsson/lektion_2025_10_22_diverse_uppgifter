@@ -10,5 +10,18 @@ const team = {
   };
   
   // Uppgift 1: Öka varje spelares poäng med 5 och skriv ut den uppdaterade arrayen.
-  // Uppgift 2: Lägg till en ny spelare i arrayen med ett namn och en poäng, och skriv ut det uppdaterade team-objektet.
+  team.players.forEach(function(player){
+      // Nya poängen = Nuvarande poäng + 5
+     player.score += 5;
+  })  
 
+  console.log(team);
+
+  // Uppgift 2: Lägg till en ny spelare i arrayen med ett namn och en poäng, och skriv ut det uppdaterade team-objektet.
+  const newPlayer = {
+    name: "Lennart",
+    score: 200
+  }
+  team.players.push(newPlayer);
+
+  console.log(team);

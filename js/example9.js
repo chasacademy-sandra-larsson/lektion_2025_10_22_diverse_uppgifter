@@ -14,4 +14,15 @@ const university = {
   };
 
 // Uppgift 1: Loopa genom fakulteterna och skriv ut deras namn och chefer.
+
+university.faculties.forEach(function(faculty) {
+    console.log(`Chefen för ${faculty.name} är ${faculty.head}`);
+});
 // Uppgift 2: Lägg till en ny student till students-arrayen och skriv ut det uppdaterade university-objektet.
+const newStudent = {
+    name: "Barbara",
+    faculty: "Latin"
+}
+university.students.push(newStudent);
+
+console.log(university);
